@@ -5,6 +5,11 @@ const about = `Warfield's Tacos is a place that is all about fun and delicious f
           parents and decided that it was his destiny to provide tacos for the
           greater community.`;
 
+const name = `Warfield's Tacos`;
+
+const logoImage =
+  'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/1520956952-chicken-tacos-horizontal.jpg';
+
 const menuList = {
   Apps: {
     Taquitos: {
@@ -137,4 +142,4 @@ const photos = {
     'https://www.seriouseats.com/2020/10/20201002-mission-style-burrito-jillian-atkinson-2.jpg',
 };
 
-export { menuList, about, location, contact, photos };
+export { menuList, about, location, contact, photos, logoImage, name };
