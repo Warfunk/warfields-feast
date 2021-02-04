@@ -1,9 +1,10 @@
 import './App.css';
-import Header from './Header';
-import Menu from './Menu';
-import Location from './Location';
-import Contact from './Contact';
-import About from './About';
+import Header from './components/Header';
+import Menu from './components/Menu';
+import Location from './components/Location';
+import Contact from './components/Contact';
+import About from './components/About';
+import Photos from './components/Photos';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className='main'>
         <Menu />
         <About />
+        <Photos />
         <Location />
         <Contact />
       </div>
