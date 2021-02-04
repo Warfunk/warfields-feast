@@ -3,8 +3,9 @@
   color: rgb(189, 8, 8);
   background-color: rgba(30, 80, 35, 0.6);
   border-radius: 15px;
-  width: 45rem;
-  height: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   text-align: center;
 }
 
@@ -26,6 +27,7 @@
 .photo {
   margin: auto;
   width: 100%;
+  object-fit: cover;
 }
 
 .photo-div {
@@ -72,9 +74,6 @@
   margin-bottom: 50px;
 }
 
-#menu {
-}
-
 #location {
   margin-bottom: 15px;
   margin-top: 25px;
@@ -108,8 +107,8 @@
 .dd-nav {
   background-color: rgba(30, 80, 35, 0.9);
   position: fixed;
-  top: 70px;
-  left: 60px;
+  top: 50px;
+  left: 45px;
   padding: 15px;
   border-radius: 15%;
 }
@@ -123,9 +122,9 @@
 
 .hmbg {
   background-color: rgb(48, 39, 39);
-  height: 5px;
-  width: 25px;
-  margin: 5px;
+  height: 3px;
+  width: 20px;
+  margin: 3px;
 }
 
 .btn {
@@ -133,7 +132,7 @@
   border-radius: 15px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 605px) {
   .nav {
     display: none;
   }
@@ -145,7 +144,31 @@
     display: block;
   }
 
+  .logo {
+    font-size: 3em;
+  }
+
   #about {
     width: 200px;
+  }
+
+  .photo-div {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .photo-div {
+    width: 250px;
+    height: 200px;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .header {
+    height: 17rem;
   }
 }

@@ -25,16 +25,16 @@ const DropDownNav = () => {
         </button>
       </div>
       <div style={divStyle} className='dd-nav'>
-        <a className='ddnav-item' href='#menu'>
+        <a className='ddnav-item' href='#menu' onClick={toggleNav}>
           Menu
         </a>
-        <a className='ddnav-item' href='#about'>
+        <a className='ddnav-item' href='#about' onClick={toggleNav}>
           About Us
         </a>
-        <a className='ddnav-item' href='#location'>
+        <a className='ddnav-item' href='#location' onClick={toggleNav}>
           Location
         </a>
-        <a className='ddnav-item' href='#contact'>
+        <a className='ddnav-item' href='#contact' onClick={toggleNav}>
           Contact
         </a>
       </div>

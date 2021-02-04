@@ -7,7 +7,9 @@ const MenuNav = ({ setSection, menuSections }) => {
             {item}
           </span>{' '}
           {/* Adding dots between menu nav items, stops before final item */}
-          {idx !== menuSections.length - 1 ? <span>&#9679;</span> : null}
+          {idx !== menuSections.length - 1 ? (
+            <span className='dots'>&#9679;</span>
+          ) : null}
         </div>
       ))}
     </div>
