@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/warfields-feast/static/css/main.11770c69.chunk.css",
+    "main.js": "/warfields-feast/static/js/main.22dcc12c.chunk.js",
+    "main.js.map": "/warfields-feast/static/js/main.22dcc12c.chunk.js.map",
+    "runtime-main.js": "/warfields-feast/static/js/runtime-main.7368754b.js",
+    "runtime-main.js.map": "/warfields-feast/static/js/runtime-main.7368754b.js.map",
+    "static/js/2.0f6619ff.chunk.js": "/warfields-feast/static/js/2.0f6619ff.chunk.js",
+    "static/js/2.0f6619ff.chunk.js.map": "/warfields-feast/static/js/2.0f6619ff.chunk.js.map",
+    "static/js/3.93e234a3.chunk.js": "/warfields-feast/static/js/3.93e234a3.chunk.js",
+    "static/js/3.93e234a3.chunk.js.map": "/warfields-feast/static/js/3.93e234a3.chunk.js.map",
+    "index.html": "/warfields-feast/index.html",
+    "static/css/main.11770c69.chunk.css.map": "/warfields-feast/static/css/main.11770c69.chunk.css.map",
+    "static/js/2.0f6619ff.chunk.js.LICENSE.txt": "/warfields-feast/static/js/2.0f6619ff.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7368754b.js",
+    "static/js/2.0f6619ff.chunk.js",
+    "static/css/main.11770c69.chunk.css",
+    "static/js/main.22dcc12c.chunk.js"
+  ]
+}
