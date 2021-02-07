@@ -1,4 +1,4 @@
-import { about } from '../restaurantInfo';
+import { about } from '../../restaurantInfo';
 
 const About = () => {
   return (

@@ -21,7 +21,9 @@ const Cart = ({ cart, total }) => {
 
   return (
     <div className='cart'>
-      <button onClick={toggleCart}>Cart</button>
+      <button onClick={toggleCart} className='crt-btn'>
+        Cart
+      </button>
       <CartItems cart={cart} />
       <h3 style={{ display: showCart }}>Total: ${total}</h3>
     </div>

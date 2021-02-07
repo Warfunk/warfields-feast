@@ -1,4 +1,4 @@
-import { location } from '../restaurantInfo';
+import { location } from '../../restaurantInfo';
 
 const Location = () => {
   const street = location.street;

@@ -67,7 +67,6 @@
   position: absolute;
   top: 0;
   padding: 2rem;
-  text-decoration: none;
 }
 
 .nav-item {
@@ -75,6 +74,7 @@
   font-weight: bold;
   font-size: x-large;
   color: black;
+  text-decoration: none;
 }
 
 .order {
@@ -148,6 +148,21 @@
 .btn {
   border: rgb(48, 39, 39) solid 3px;
   border-radius: 15px;
+}
+
+.cart {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+.crt-btn {
+  right: 0;
+}
+
+.order-link {
+  text-decoration: none;
+  color: black;
 }
 
 @media only screen and (max-width: 605px) {

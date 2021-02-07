@@ -1,4 +1,4 @@
-import { menuList } from './restaurantInfo';
+import { menuList } from '../../restaurantInfo';
 import ItemPrice from './ItemPrice';
 
 const SectionItems = ({ s, setCart, cart, total, setTotal }) => {

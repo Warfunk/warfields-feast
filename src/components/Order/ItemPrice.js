@@ -1,4 +1,4 @@
-import { menuList } from './restaurantInfo';
+import { menuList } from '../../restaurantInfo';
 
 const ItemPrice = ({ s, item, setCart, cart, total, setTotal }) => {
   const onOrder = () => {

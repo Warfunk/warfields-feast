@@ -1,4 +1,4 @@
-import { contact } from '../restaurantInfo';
+import { contact } from '../../restaurantInfo';
 
 const Contact = () => {
   return (

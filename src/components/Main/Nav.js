@@ -14,7 +14,7 @@ const Nav = ({ OrderNow }) => {
         Contact
       </a>
       <div className='nav-item'>
-        <OrderNow />
+        <OrderNow className='nav nav-item' />
       </div>
     </div>
   );

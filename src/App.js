@@ -2,20 +2,16 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 import './App.css';
 import Header from './components/Header';
-import Menu from './components/Menu';
-import Location from './components/Location';
-import Contact from './components/Contact';
-import About from './components/About';
-import Photos from './components/Photos';
-import Order from './Order';
+import Menu from './components/Main/Menu';
+import Location from './components/Main/Location';
+import Contact from './components/Main/Contact';
+import About from './components/Main/About';
+import Photos from './components/Main/Photos';
+import Order from './components/Order/Order';
 
 function App() {
   const OrderNow = () => {
-    return (
-      <div className='orderLink'>
-        <Link to='/ordernow'>Order Now!</Link>
-      </div>
-    );
+    return <Link to='/ordernow'>Order Now!</Link>;
   };
   return (
     <Router>

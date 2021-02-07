@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { photos } from '../restaurantInfo';
+import { photos } from '../../restaurantInfo';
 
 const Photos = () => {
   const [i, setI] = useState(0);

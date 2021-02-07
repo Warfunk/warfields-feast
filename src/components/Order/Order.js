@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { menuList } from './restaurantInfo';
+import { menuList } from '../../restaurantInfo';
 import SectionItems from './SectionItems';
 import Cart from './Cart';
 

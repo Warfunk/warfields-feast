@@ -1,7 +1,7 @@
-import Nav from './Nav.js';
-import DropDownNav from './DropDownNav';
+import Nav from './Main/Nav.js';
+import DropDownNav from './Main/DropDownNav';
 import { logoImage, name } from '../restaurantInfo';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 const Header = ({ OrderNow }) => {
   return (
@@ -9,6 +9,11 @@ const Header = ({ OrderNow }) => {
       <Route exact={true} path='/warfields-feast'>
         <Nav OrderNow={OrderNow} />
         <DropDownNav OrderNow={OrderNow} />
+      </Route>
+      <Route path='/ordernow'>
+        <Link to='/warfields-feast' className='nav nav-item'>
+          Home
+        </Link>
       </Route>
       <h1 className='logo'>{name}</h1>
     </div>

@@ -1,6 +1,6 @@
 import MenuNav from './MenuNav';
 import { useState } from 'react';
-import { menuList } from '../restaurantInfo';
+import { menuList } from '../../restaurantInfo';
 
 const Menu = () => {
   const menuSections = Object.keys(menuList);
