@@ -151,7 +151,7 @@
 }
 
 .cart {
-  display: flex;
+  display: flexbox;
   position: absolute;
   right: 0;
 }
