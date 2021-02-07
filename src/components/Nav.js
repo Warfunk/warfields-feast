@@ -1,4 +1,4 @@
-const Nav = () => {
+const Nav = ({ OrderNow }) => {
   return (
     <div className='nav'>
       <a className='nav-item' href='#menu'>
@@ -13,6 +13,9 @@ const Nav = () => {
       <a className='nav-item' href='#contact'>
         Contact
       </a>
+      <div className='nav-item'>
+        <OrderNow />
+      </div>
     </div>
   );
 };

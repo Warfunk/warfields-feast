@@ -13,6 +13,17 @@
   padding: 10px;
 }
 
+.order-list {
+  text-align: center;
+  display: flexbox;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.order-btn {
+  margin-left: 25px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -64,6 +75,14 @@
   font-weight: bold;
   font-size: x-large;
   color: black;
+}
+
+.order {
+  color: black;
+}
+
+.item {
+  display: inline-flex;
 }
 
 .main {
