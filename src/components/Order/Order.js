@@ -14,7 +14,7 @@ const Order = () => {
         <div key={section} className='order-list'>
           <h3>{section}</h3>
           <SectionItems
-            s={section}
+            section={section}
             setCart={setCart}
             cart={cart}
             total={total}
