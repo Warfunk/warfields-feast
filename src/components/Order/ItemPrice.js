@@ -2,10 +2,12 @@ import { menuList } from '../../restaurantInfo';
 
 const ItemPrice = ({ s, item, setCart, cart, total, setTotal }) => {
   const onOrder = () => {
-    const added = menuList[s][item].price + total;
+    const price = menuList[s][item].price;
+    const added = price + total;
     const rounded = added.toFixed(2);
     const floated = parseFloat(rounded);
-    setCart([[item, menuList[s][item].price], ...cart]);
+    const newItem = [item, price];
+    setCart([newItem, ...cart]);
     setTotal(floated);
   };
   return (

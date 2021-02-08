@@ -9,10 +9,10 @@ const Cart = ({ cart, total }) => {
       setShowCart('none');
     }
   };
-
+  console.log(cart.length);
   const CartItems = () => {
     return cart.map((item) => (
-      <div style={{ display: showCart }} key={item}>
+      <div style={{ display: showCart }} key={cart.indexOf(item)}>
         {item[0]}
         {item[1]}
       </div>
