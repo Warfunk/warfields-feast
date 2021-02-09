@@ -17,7 +17,7 @@ const Cart = ({ cart, total }) => {
         className='cart-item'
         key={cart.indexOf(item)}
       >
-        <div>{item[0]}...</div>
+        <div className='item-name'>{item[0]}...</div>
         <div className='item-price'>{item[1]}</div>
       </div>
     ));

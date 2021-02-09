@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const DropDownNav = () => {
+const DropDownNav = ({ OrderNow }) => {
   const [style, setDisplay] = useState('none');
 
   const divStyle = {
@@ -36,6 +36,9 @@ const DropDownNav = () => {
         </a>
         <a className='ddnav-item' href='#contact' onClick={toggleNav}>
           Contact
+        </a>
+        <a className='ddnav-item' href='#contact' onClick={toggleNav}>
+          <OrderNow className='nav nav-item' />
         </a>
       </div>
     </div>

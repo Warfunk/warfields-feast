@@ -4,11 +4,19 @@
   margin-bottom: 50px;
 }
 
+.crt-btn {
+  color: azure;
+  background-color: rgb(1, 27, 27);
+  border-radius: 10%;
+  border-color: rgb(1, 27, 27);
+}
+
 .order-btn {
   color: azure;
   background-color: rgb(1, 27, 27);
   border-radius: 10%;
   margin-left: 25px;
+  border-color: rgb(1, 27, 27);
 }
 
 .item {
@@ -24,16 +32,12 @@
   background-color: rgb(1, 27, 27);
   display: grid;
   position: absolute;
-  right: 0;
+  margin-left: 65%;
 }
 
 .cart-item {
   display: grid;
   grid-template-columns: auto auto;
-}
-
-.crt-btn {
-  right: 0;
 }
 
 .item-name {
@@ -46,6 +50,7 @@
 
 @media only screen and (max-width: 350px) {
   .item {
-    min-width: 100vw;
+    min-width: 75vw;
+    grid-template-columns: 1fr;
   }
 }

@@ -11,25 +11,29 @@ import Order from './components/Order/Order';
 
 function App() {
   const OrderNow = () => {
-    return <Link to='/ordernow'>Order Now!</Link>;
+    return (
+      <Link className='order' to='/ordernow'>
+        Order Now!
+      </Link>
+    );
   };
   return (
     <Router>
       <div className='App'>
         <Header OrderNow={OrderNow} />
-        <Route exact={true} path='/warfields-feast'>
-          <div className='main'>
+        <div className='main'>
+          <Route exact={true} path='/warfields-feast'>
             <Menu />
-            <OrderNow className='order' />
+            <OrderNow />
             <About />
             <Photos />
             <Location />
             <Contact />
-          </div>
-        </Route>
-        <Route path='/ordernow'>
-          <Order />
-        </Route>
+          </Route>
+          <Route path='/ordernow'>
+            <Order />
+          </Route>
+        </div>
       </div>
     </Router>
   );

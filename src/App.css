@@ -1,6 +1,5 @@
 .logo {
   font-size: 5em;
-  color: rgb(189, 8, 8);
   background-color: rgba(30, 80, 35, 0.6);
   border-radius: 15px;
   display: flex;
@@ -9,8 +8,19 @@
   text-align: center;
 }
 
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
 .menu-item {
+  justify-items: center;
   padding: 10px;
+  width: 200px;
 }
 
 .header {
@@ -68,13 +78,17 @@
 
 .order {
   color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .main {
   text-align: center;
   display: flexbox;
   justify-content: center;
-  margin-bottom: 50px;
+  padding: 25px;
+  padding-bottom: 50px;
+  background-color: rgba(30, 80, 35, 0.6);
 }
 
 #location {
@@ -95,6 +109,7 @@
 #about {
   margin: auto;
   max-width: 400px;
+  margin-top: 50px;
 }
 
 .menu-nav-item {
@@ -118,7 +133,7 @@
 
 .ddnav-item {
   display: block;
-  color: rgb(15, 4, 87);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-decoration: none;
 }
@@ -140,7 +155,7 @@
   color: black;
 }
 
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 650px) {
   .nav {
     display: none;
   }
@@ -163,6 +178,13 @@
   .photo-div {
     width: 400px;
     height: 300px;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  .menu-item {
+    width: 100%;
   }
 }
 

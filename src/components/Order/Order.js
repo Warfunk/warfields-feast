@@ -26,7 +26,7 @@ const Order = () => {
     });
   };
   return (
-    <div>
+    <div className='ord'>
       <Cart cart={cart} total={total} />
       <OrderMenu />
     </div>

@@ -8,7 +8,7 @@ const Menu = () => {
   const s = Object.entries(menuList[section]);
   const Items = () => {
     return (
-      <div>
+      <div className='menu'>
         {s.map((item) => {
           return (
             <div key={item[0]} className='menu-item'>
