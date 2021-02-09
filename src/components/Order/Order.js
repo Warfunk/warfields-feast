@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Order.css';
 
 import { menuList } from '../../restaurantInfo';
 import SectionItems from './SectionItems';

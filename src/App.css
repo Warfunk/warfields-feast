@@ -13,17 +13,6 @@
   padding: 10px;
 }
 
-.order-list {
-  text-align: center;
-  display: flexbox;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.order-btn {
-  margin-left: 25px;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -79,10 +68,6 @@
 
 .order {
   color: black;
-}
-
-.item {
-  display: inline-flex;
 }
 
 .main {
@@ -148,16 +133,6 @@
 .btn {
   border: rgb(48, 39, 39) solid 3px;
   border-radius: 15px;
-}
-
-.cart {
-  display: flexbox;
-  position: absolute;
-  right: 0;
-}
-
-.crt-btn {
-  right: 0;
 }
 
 .order-link {

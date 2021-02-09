@@ -6,18 +6,16 @@ const SectionItems = ({ section, setCart, cart, total, setTotal }) => {
   return (
     <div>
       {si.map((item) => (
-        <div key={item}>
-          <h5 key={item} className='item'>
-            {item}......
-            <ItemPrice
-              item={item}
-              section={section}
-              setCart={setCart}
-              cart={cart}
-              total={total}
-              setTotal={setTotal}
-            />
-          </h5>
+        <div key={item} className='item'>
+          <div className='item-name'>{item}......</div>
+          <ItemPrice
+            item={item}
+            section={section}
+            setCart={setCart}
+            cart={cart}
+            total={total}
+            setTotal={setTotal}
+          />
         </div>
       ))}
     </div>

@@ -1,0 +1,51 @@
+.order-list {
+  text-align: center;
+  display: flexbox;
+  margin-bottom: 50px;
+}
+
+.order-btn {
+  color: azure;
+  background-color: rgb(1, 27, 27);
+  border-radius: 10%;
+  margin-left: 25px;
+}
+
+.item {
+  margin: auto;
+  width: 20vw;
+  min-width: 305px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cart {
+  color: azure;
+  background-color: rgb(1, 27, 27);
+  display: grid;
+  position: absolute;
+  right: 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.crt-btn {
+  right: 0;
+}
+
+.item-name {
+  text-align: start;
+}
+
+.item-price {
+  text-align: end;
+}
+
+@media only screen and (max-width: 350px) {
+  .item {
+    min-width: 100vw;
+  }
+}

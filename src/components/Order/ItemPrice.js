@@ -11,7 +11,7 @@ const ItemPrice = ({ section, item, setCart, cart, total, setTotal }) => {
     setTotal(floated);
   };
   return (
-    <div>
+    <div className='item-price'>
       {menuList[section][item].price}
       <button className='order-btn' onClick={onOrder}>
         Add to Order

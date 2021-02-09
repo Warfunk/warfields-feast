@@ -9,12 +9,16 @@ const Cart = ({ cart, total }) => {
       setShowCart('none');
     }
   };
-  console.log(cart.length);
+
   const CartItems = () => {
     return cart.map((item) => (
-      <div style={{ display: showCart }} key={cart.indexOf(item)}>
-        {item[0]}
-        {item[1]}
+      <div
+        style={{ display: showCart }}
+        className='cart-item'
+        key={cart.indexOf(item)}
+      >
+        <div>{item[0]}...</div>
+        <div className='item-price'>{item[1]}</div>
       </div>
     ));
   };
