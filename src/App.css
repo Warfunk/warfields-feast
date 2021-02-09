@@ -1,6 +1,6 @@
 .logo {
   font-size: 5em;
-  background-color: rgba(30, 80, 35, 0.6);
+  background-color: rgba(30, 80, 35, 0.7);
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +31,8 @@
   width: 100%;
   background-size: cover;
   background-position: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .photo {
@@ -89,6 +91,8 @@
   padding: 25px;
   padding-bottom: 50px;
   background-color: rgba(30, 80, 35, 0.6);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #location {
