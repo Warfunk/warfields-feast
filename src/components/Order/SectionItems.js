@@ -1,7 +1,13 @@
 import { menuList } from '../../restaurantInfo';
 import ItemPrice from './ItemPrice';
 
-const SectionItems = ({ section, setCart, cart, total, setTotal }) => {
+const SectionItems = ({
+  section,
+  setCartItems,
+  cartItems,
+  cartPrices,
+  setCartPrices,
+}) => {
   const si = Object.keys(menuList[section]);
   return (
     <div>
@@ -11,10 +17,10 @@ const SectionItems = ({ section, setCart, cart, total, setTotal }) => {
           <ItemPrice
             item={item}
             section={section}
-            setCart={setCart}
-            cart={cart}
-            total={total}
-            setTotal={setTotal}
+            setCartItems={setCartItems}
+            setCartPrices={setCartPrices}
+            cartItems={cartItems}
+            cartPrices={cartPrices}
           />
         </div>
       ))}

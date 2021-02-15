@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import RemoveItem from './RemoveItem';
 
-const Cart = ({ cart, total }) => {
+const Cart = ({ cartItems, cartPrices, setCartItems, setCartPrices }) => {
+  const [total, setTotal] = useState(0);
   const [showCart, setShowCart] = useState('none');
   const toggleCart = () => {
     if (showCart === 'none') {
@@ -10,15 +12,36 @@ const Cart = ({ cart, total }) => {
     }
   };
 
+  useEffect(() => {
+    function round(value, decimals) {
+      return Number(
+        Math.round(value + 'e' + decimals) + 'e-' + decimals
+      ).toFixed(decimals);
+    }
+    if (cartPrices.length > 0) {
+      const price = cartPrices.reduce((total, price) => total + price);
+      const roundedPrice = round(price, 2);
+      setTotal(roundedPrice);
+    } else {
+      setTotal(0);
+    }
+  }, [cartPrices]);
+
   const CartItems = () => {
-    return cart.map((item) => (
-      <div
-        style={{ display: showCart }}
-        className='cart-item'
-        key={cart.indexOf(item)}
-      >
-        <div className='item-name'>{item[0]}...</div>
-        <div className='item-price'>{item[1]}</div>
+    return cartItems.map((item, idx) => (
+      <div style={{ display: showCart }} className='cart-item' key={idx}>
+        <div className='item-name'>{item}... </div>
+        <div className='item-price'>
+          {cartPrices[idx]}
+          {'  '}
+          <RemoveItem
+            item={item}
+            setCartPrices={setCartPrices}
+            cartPrices={cartPrices}
+            setCartItems={setCartItems}
+            cartItems={cartItems}
+          />
+        </div>
       </div>
     ));
   };
@@ -28,7 +51,7 @@ const Cart = ({ cart, total }) => {
       <button onClick={toggleCart} className='crt-btn'>
         Cart
       </button>
-      <CartItems cart={cart} />
+      <CartItems cart={cartItems} cartPrices={cartPrices} />
       <h3 style={{ display: showCart }}>Total: ${total}</h3>
     </div>
   );

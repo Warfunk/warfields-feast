@@ -37,9 +37,7 @@ const DropDownNav = ({ OrderNow }) => {
         <a className='ddnav-item' href='#contact' onClick={toggleNav}>
           Contact
         </a>
-        <a className='ddnav-item' href='#contact' onClick={toggleNav}>
-          <OrderNow className='nav nav-item' />
-        </a>
+        <OrderNow className='nav nav-item' />
       </div>
     </div>
   );

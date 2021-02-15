@@ -7,14 +7,16 @@
 .crt-btn {
   color: azure;
   background-color: rgb(1, 27, 27);
-  border-radius: 10%;
+  border-radius: 10px;
   border-color: rgb(1, 27, 27);
+  min-width: 130px;
 }
 
 .order-btn {
+  cursor: pointer;
   color: azure;
   background-color: rgb(1, 27, 27);
-  border-radius: 10%;
+  border-radius: 10px;
   margin-left: 25px;
   border-color: rgb(1, 27, 27);
 }
@@ -28,11 +30,13 @@
 }
 
 .cart {
+  right: 25px;
+  top: 25px;
+  border-radius: 10px;
   color: azure;
   background-color: rgb(1, 27, 27);
   display: grid;
-  position: absolute;
-  margin-left: 65%;
+  position: fixed;
 }
 
 .cart-item {
@@ -40,7 +44,16 @@
   grid-template-columns: auto auto;
 }
 
+.remove {
+  margin: auto;
+  cursor: pointer;
+  background-color: none;
+}
+
 .item-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   text-align: start;
 }
 
