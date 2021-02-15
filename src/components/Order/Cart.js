@@ -27,6 +27,10 @@ const Cart = ({ cartItems, cartPrices, setCartItems, setCartPrices }) => {
     }
   }, [cartPrices]);
 
+  const placeOrder = () => {
+    alert('Not a real restaurant yet!');
+  };
+
   const CartItems = () => {
     return cartItems.map((item, idx) => (
       <div style={{ display: showCart }} className='cart-item' key={idx}>
@@ -53,6 +57,13 @@ const Cart = ({ cartItems, cartPrices, setCartItems, setCartPrices }) => {
       </button>
       <CartItems cart={cartItems} cartPrices={cartPrices} />
       <h3 style={{ display: showCart }}>Total: ${total}</h3>
+      <button
+        style={{ display: showCart }}
+        className='place'
+        onClick={placeOrder}
+      >
+        Place Order
+      </button>
     </div>
   );
 };
