@@ -1,1 +1,1 @@
-Dynamic restaurant menu. Order page coming soon.
+Dynamic restaurant menu with ordering capabilities. Built using React and CSS to create a responsive and well laid out website for any restaurant. Ability to change info on a single js file to update the website data. 
